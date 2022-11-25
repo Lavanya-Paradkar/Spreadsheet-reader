@@ -1,0 +1,80 @@
+.file__card{
+    background-color: #edf2f7;
+    margin: 15px;
+    border: 2px dashed #cbd5e0;
+    border-radius: 20px;
+    padding: 1em;
+    min-width: 380px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.file__input{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.file__input > input{
+    position: relative;
+    text-align: right;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    height: 46px;
+    max-width: 200px;
+}
+
+.file__input > button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #f55e30;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.5);
+}
+
+.file__input > button :hover{
+    background-color: #5b3426;
+}
+
+.file__input > button > i {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 1px;
+    background-color: #fff;
+    color: #f55e30;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8em;
+    font-size: 0.8em;
+}
+
+
+.main {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.4em;
+    z-index: 2;
+}
+
+.info {
+    font-size: 16px;
+    z-index: 2;
+}
